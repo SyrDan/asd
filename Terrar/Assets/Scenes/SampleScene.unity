@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 4505.3057, g: 2937.7676, b: 2293.8047, a: 1}
+  m_IndirectSpecularColor: {r: 4522.375, g: 2942.0137, b: 2279.4688, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10146,5 +10146,210 @@ PrefabInstance:
       propertyPath: m_Name
       value: asd
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8079090206781040906, guid: 04c0e955bab488a44a56b67a3b398a43, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 04c0e955bab488a44a56b67a3b398a43, type: 3}
+--- !u!1 &5184410050542341658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5184410051673413507, guid: 04c0e955bab488a44a56b67a3b398a43, type: 3}
+  m_PrefabInstance: {fileID: 5184410050542341657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5184410050542341659 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3338589484855954750, guid: 04c0e955bab488a44a56b67a3b398a43, type: 3}
+  m_PrefabInstance: {fileID: 5184410050542341657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5184410050542341660 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 63776176697115266, guid: 04c0e955bab488a44a56b67a3b398a43, type: 3}
+  m_PrefabInstance: {fileID: 5184410050542341657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5184410050542341661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6611422559884191179, guid: 04c0e955bab488a44a56b67a3b398a43, type: 3}
+  m_PrefabInstance: {fileID: 5184410050542341657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!320 &5184410050542341662
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5184410050542341658}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 046feda15c0d299438a56236b80eb377, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!114 &5184410050542341663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5184410050542341661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99736a2cb0b0c1143ba79559fca94b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CrushFX: {fileID: 1951638616}
+  TimeReloadScene: 3
+--- !u!54 &5184410050542341664
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5184410050542341661}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5184410050542341665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5184410050542341661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9fb2c890b19ece45a0bf1c314aa2a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement:
+    m_Name: Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 649d9db1-893d-4000-ad0c-0bc9cde396d7
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 8c3b0afc-9eb3-40e0-aa46-a7753b37bc21
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 63844076-a383-49bc-955b-99dc4860261a
+      m_Path: <Joystick>/stick/up
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: e867db89-beb4-4b48-99a7-6fee3b1ebc52
+      m_Path: <Joystick>/stick/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 0ace6d38-af29-454c-90bc-f7f040cfb745
+      m_Path: <Joystick>/stick/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 620b8f97-e6a4-4bff-b84c-d738867211a3
+      m_Path: <Joystick>/stick/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: 2D Vector
+      m_Id: 6f6f8426-9303-4298-98b4-9ecba4f35619
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: ed77ae43-08a3-463a-819f-a25903fab2a6
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 569062cb-9b9f-4bf4-bb50-ffd9c5f85b9e
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 5fc71e99-1d6b-42de-8744-bed1d1924fc4
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 1a32b0e7-2589-48e0-8222-dc840d4c996c
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    m_Flags: 0
+  fire:
+    m_Name: Fire
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 88bc9e46-6833-4f91-8c47-206df32675c2
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 76a70487-a972-4ef1-9ae9-9671a0e069eb
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Fire
+      m_Flags: 0
+    - m_Name: 
+      m_Id: f1428bfd-5dfd-40ac-b3e3-1769ea9df9e9
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Fire
+      m_Flags: 0
+    m_Flags: 0
+  speed: 5
+  maxX: 3
+  maxY: 8
+  minY: -4
+  pitchFactor: -5
+  controlPitchFactor: 5
+  controlRollFactor: 15
+  yawFactor: 4
+  lasers:
+  - {fileID: 5184410050542341660}
+  - {fileID: 5184410050542341659}
